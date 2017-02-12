@@ -6,13 +6,9 @@ package WriteNumberinExpandedForm
 class ExpandedForm {
   def expandedForm(num: BigInt): String = {
     var unitBase = 10
-      println(num.toString.reverse)
-      num.toString.reverse.map(_.asDigit).zipWithIndex.map {
-      case (n,i)  => if(n != 0) n * math.pow(unitBase, i).toLong  }.reverse.filter (_ != ()).mkString(" + ")
-    //filter (_ != ())
-//    val t = sNum.map(s => s * base )
-//    sNum
-
+    println(num.toString.reverse)
+    num.toString.reverse.map(_.asDigit).zipWithIndex.map {
+      case (n, i) => if (n != 0) n * math.pow(unitBase, i).toLong
+    }.reverse.filter(_ != ()).mkString(" + ")
   }
-
 }
