@@ -3,7 +3,7 @@ import GapinPrimes.GapinPrimes
 import TheCouponCode.CouponCode
 import makeBackronym.make
 
- var s = new SumOfK
+var s = new SumOfK
 //  val result = s chooseBestSum(163, 3, List(50, 55, 56, 57, 58))
 //  println(result)
 

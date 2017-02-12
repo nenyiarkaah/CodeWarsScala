@@ -10,15 +10,17 @@ import org.scalatest.BeforeAndAfter
 class SumOfKTest extends FlatSpec with BeforeAndAfter {
 
   var s: SumOfK = _
-  before { s = new SumOfK }
+  before {
+    s = new SumOfK
+  }
   "SumOfK" should
     "Handle 3 Basic Tests" in {
-      s chooseBestSum(163, 3, List(50, 55, 56, 57, 58)) shouldBe Some(163)
+    s chooseBestSum(163, 3, List(50, 55, 56, 57, 58)) shouldBe Some(163)
 
-      s chooseBestSum(163, 3, List(50)) shouldBe None
+    s chooseBestSum(163, 3, List(50)) shouldBe None
 
-      s chooseBestSum(230, 3, List(91, 74, 73, 85, 73, 81, 87)) shouldBe Some(228)
-    }
+    s chooseBestSum(230, 3, List(91, 74, 73, 85, 73, 81, 87)) shouldBe Some(228)
+  }
 
   it should "Handle 5 Basic Tests 2" in {
     s chooseBestSum(331, 2, List(73, 73, 74, 81, 85, 87, 91)) shouldBe Some(178)

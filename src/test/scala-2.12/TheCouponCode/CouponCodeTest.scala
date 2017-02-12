@@ -7,10 +7,12 @@ import org.scalatest.BeforeAndAfter
 /**
   * Created by Nenyi on 30/01/2017.
   */
-class CouponCodeTest  extends FlatSpec with BeforeAndAfter {
+class CouponCodeTest extends FlatSpec with BeforeAndAfter {
 
   var c: CouponCode = _
-  before { c = new CouponCode }
+  before {
+    c = new CouponCode
+  }
   "checkCoupon" should
     "Handle Example Tests" in {
     c checkCoupon("123", "123", "September 5, 2014", "October 1, 2014") shouldBe true

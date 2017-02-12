@@ -10,10 +10,12 @@ import org.scalatest.BeforeAndAfter
 class ChainAddingTest extends FlatSpec with BeforeAndAfter {
 
   var c: ChainAdding = _
-  before { c = new ChainAdding }
+  before {
+    c = new ChainAdding
+  }
   "add" should
     "Handle Example Tests" in {
-    c add(1) shouldBe 1
+    c add (1) shouldBe 1
     c add(1, 2) shouldBe 3
     c add(1, 2, 3) shouldBe 6
   }
@@ -23,12 +25,12 @@ class ChainAddingTest extends FlatSpec with BeforeAndAfter {
   }
 
   it should "be able to store the returned values and reuse them 1" in {
-    val addTwo = c add(2)
+    val addTwo = c add (2)
     addTwo + 5 shouldBe 7
   }
 
   it should "be able to store the returned values and reuse them 2" in {
-    val addTwo = (n: Int) => c add(n) + 2
+    val addTwo = (n: Int) => c add (n) + 2
     addTwo(3) shouldBe 5
   }
 

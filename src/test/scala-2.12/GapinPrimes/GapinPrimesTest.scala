@@ -7,10 +7,12 @@ import org.scalatest.Matchers._
 /**
   * Created by Nenyi on 01/02/2017.
   */
-class GapinPrimesTest extends FlatSpec with BeforeAndAfter  {
+class GapinPrimesTest extends FlatSpec with BeforeAndAfter {
 
   var g: GapinPrimes = _
-  before { g = new GapinPrimes }
+  before {
+    g = new GapinPrimes
+  }
   "gap" should
     "Handle Example Tests" in {
     g gap(2, 100, 110, None) shouldBe Array(101, 103)
