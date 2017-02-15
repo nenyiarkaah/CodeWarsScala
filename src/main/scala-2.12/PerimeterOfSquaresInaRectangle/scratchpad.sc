@@ -2,4 +2,5 @@ import PerimeterOfSquaresInaRectangle.PerimeterOfSquaresInaRectangle
 
 val f = new PerimeterOfSquaresInaRectangle
 
-f perimeter (64)
+f perimeter (5)
+//f perimeter (64)
