@@ -1,21 +1,10 @@
-# Created by .ignore support plugin (hsz.mobi)
-### Example user template template
-### Example user template
 
-# IntelliJ project files
+### Standard template
+/RUNNING_PID
+/logs/
+/project/*-shim.sbt
+/project/project/
+/project/target/
+/target/
 .idea
-*.iml
-out
-gen
-.gitignore
-.idea/workspace.xml
-project/project/
-project/target/
-src/main/java/
-src/main/resources/
-src/main/scala-2.12/ReducingByRulesToGetTheResult/
-src/main/scala/
-src/test/java/
-src/test/resources/
-src/test/scala/
-target/
+bin
